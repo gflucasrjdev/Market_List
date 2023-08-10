@@ -1,0 +1,57 @@
+name: market_list # Nome do seu projeto
+description: A new Flutter project. # Descrição breve do projeto
+publish_to: 'none' # Previne a publicação acidental no pub.dev
+
+# Versão da aplicação. Pode ser sobrescrito durante a construção com --build-name e --build-number
+version: 1.0.0+1
+
+# Configurações de ambiente SDK
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+# Lista de dependências que o projeto precisa para funcionar
+dependencies:
+  flutter: # Dependência principal do SDK Flutter
+    sdk: flutter  
+  cupertino_icons: ^1.0.2 # Ícones no estilo Cupertino
+  convex_bottom_bar: ^3.2.0 # Barra de navegação inferior convexa
+  http: ^1.1.0 # Para requisições HTTP
+  carousel_slider: ^4.0.0-nullsafety.0 # Slider de carrossel com suporte a null safety
+  hive: ^2.0.4 # Armazenamento local
+  hive_flutter: ^1.1.0 # Hive para Flutter
+  table_calendar: ^3.0.0 # Calendário em forma de tabela
+  intl: ^0.18.1 # Internacionalização
+  material_color_utilities: ^0.2.0
+
+# Dependências usadas durante o desenvolvimento e teste
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1 # Geração de ícones de lançamento
+  flutter_test: # Utilitário de teste do Flutter
+    sdk: flutter
+  flutter_lints: ^2.0.0 # Regras de lint para Flutter
+  hive_generator: ^2.0.0 # Gerador para Hive
+  build_runner: ^2.1.4 # Ferramenta de construção
+  url_launcher: ^6.0.12 # Lançador de URL
+  fluttertoast: ^8.0.7 # Toasts (mensagens rápidas) no Flutter
+
+# Configurações de ícones para Android
+flutter_icons:
+  android: true
+  image_path: "lib/image/app_icon.png" # Caminho para o ícone da aplicação
+
+# Configurações gerais do Flutter
+flutter:
+  uses-material-design: true # Utiliza o design material
+  assets: # Localização dos arquivos de imagem
+    - lib/image/
+  fonts: # Configuração e localização das fontes
+    - family: Raleway
+      fonts:
+        - asset: lib/font/Raleway-Regular.ttf
+        - asset: lib/font/Raleway-Italic.ttf
+          style: italic
+    - family: RobotoMono
+      fonts:
+        - asset: lib/font/RobotoMono-Regular.ttf
+        - asset: lib/font/RobotoMono-Bold.ttf
+          weight: 700
